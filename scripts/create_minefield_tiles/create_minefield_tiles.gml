@@ -11,10 +11,7 @@ function create_minefield_blueprint() {
 	}
 }
 
-// Create empty array
-// Draw minefield based on array
-
-function draw_minefield_tiles(X_DRAW_START, Y_DRAW_START) {
+function draw_playable_minefield_tiles(X_DRAW_START, Y_DRAW_START) {
 
 	var x_draw = X_DRAW_START;
 	var y_draw = Y_DRAW_START;

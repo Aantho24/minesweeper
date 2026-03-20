@@ -30,7 +30,7 @@ create_minefield_blueprint();
 playable_minefield = initialize_minefield(NUMBER_OF_ROWS, NUMBER_OF_COLUMNS);
 
 
-draw_minefield_tiles(X_DRAW_START, Y_DRAW_START);
+draw_playable_minefield_tiles(X_DRAW_START, Y_DRAW_START);
 
 /*
 LONG TERM PLAN:
