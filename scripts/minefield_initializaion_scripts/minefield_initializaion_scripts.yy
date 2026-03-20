@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"minefield_initializaion_scripts",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"minefield_initializaion_scripts",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

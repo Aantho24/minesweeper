@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"count_neighboring_mines",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"count_neighboring_mines",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

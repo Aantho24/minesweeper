@@ -1,0 +1,9 @@
+3/18:
+- Created a minefield array with customizable width and height
+- Created a function that randomly adds mines to the minefield
+- Created a tile object that holds its index (will be very useful for communicating with game later on)
+- Successfully drew the minefield to the screen
+- Made decent progress on the function that'll scan for mines to decide each of the tiles' numbers
+
+To learn version control:
+https://www.youtube.com/watch?v=ekOp35B1Bdg
