@@ -29,6 +29,7 @@
     {"id":{"name":"obj_tile","path":"objects/obj_tile/obj_tile.yy",},},
     {"id":{"name":"rm_game","path":"rooms/rm_game/rm_game.yy",},},
     {"id":{"name":"count_neighboring_mines","path":"scripts/count_neighboring_mines/count_neighboring_mines.yy",},},
+    {"id":{"name":"create_minefield_tiles","path":"scripts/create_minefield_tiles/create_minefield_tiles.yy",},},
     {"id":{"name":"minefield_initializaion_scripts","path":"scripts/minefield_initializaion_scripts/minefield_initializaion_scripts.yy",},},
     {"id":{"name":"spr_tiles","path":"sprites/spr_tiles/spr_tiles.yy",},},
   ],
