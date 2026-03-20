@@ -43,7 +43,7 @@ for (var row = 0; row < NUMBER_OF_ROWS; row++) {
 			}
 		} else {
 			with (tile) {
-				image_index = 0;
+				image_index = count_neighboring_mines(row, column);
 			}	
 		}
 		
