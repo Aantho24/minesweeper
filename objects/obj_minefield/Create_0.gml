@@ -14,7 +14,7 @@ minefield = initialize_minefield(NUMBER_OF_ROWS, NUMBER_OF_COLUMNS);
 shuffled_indexes = create_shuffled_index_list();
 
 
-NUMBER_OF_MINES = 6;
+NUMBER_OF_MINES = 5;
 // Failsafe in case number of mines is a negative number or more than what can fit.
 NUMBER_OF_MINES = min(NUMBER_OF_COLUMNS * NUMBER_OF_ROWS, NUMBER_OF_MINES);
 
@@ -61,8 +61,10 @@ LONG TERM PLAN:
 
 */
 
-
-show_debug_message($"There are {number_all_tiles_in_minefield(1, 1)} mines!")
+for (var row = 0; row < NUMBER_OF_ROWS; row++) {
+	show_debug_message(minefield[row]);
+}
+show_debug_message($"There are {count_neighboring_mines(2, 2)} mines!")
 
 // DEBUG: Print minefield
 /*
