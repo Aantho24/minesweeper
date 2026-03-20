@@ -3,7 +3,7 @@ function initialize_minefield(NUMBER_OF_ROWS, NUMBER_OF_COLUMNS) {
 	
 	for (var row = 0; row < NUMBER_OF_ROWS; row++) {
 		for (var column = 0; column < NUMBER_OF_COLUMNS; column++) {
-			minefield_buffer[row][column] = " ";
+			minefield_buffer[row][column] = "0";
 		}
 	}
 	
