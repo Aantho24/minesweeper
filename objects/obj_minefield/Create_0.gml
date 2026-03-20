@@ -7,7 +7,7 @@ randomize();
 NUMBER_OF_ROWS = 18;
 NUMBER_OF_COLUMNS = 32;
 
-minefield = initialize_minefield(NUMBER_OF_ROWS, NUMBER_OF_COLUMNS);
+minefield_blueprint = initialize_minefield(NUMBER_OF_ROWS, NUMBER_OF_COLUMNS);
 
 
 // This list decides where mines will spawn to ensure multiple mines don't get the same spot.
@@ -25,7 +25,7 @@ spawn_mines_in_minefield(NUMBER_OF_MINES);
 X_DRAW_START = 0;
 Y_DRAW_START = 0;
 
-create_minefield_blueprint();
+number_minefield_blueprint_tiles();
 
 playable_minefield = initialize_minefield(NUMBER_OF_ROWS, NUMBER_OF_COLUMNS);
 
@@ -41,7 +41,7 @@ LONG TERM PLAN:
 */
 
 for (var row = 0; row < NUMBER_OF_ROWS; row++) {
-	show_debug_message(minefield[row]);
+	show_debug_message(minefield_blueprint[row]);
 }
 show_debug_message($"There are {count_neighboring_mines(2, 2)} mines!")
 

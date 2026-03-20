@@ -30,6 +30,6 @@ function spawn_mines_in_minefield(NUMBER_OF_MINES) {
 		var mine_index_row = floor(mine_index / obj_minefield.NUMBER_OF_COLUMNS);
 		var mine_index_column = mine_index % obj_minefield.NUMBER_OF_COLUMNS;
 
-		obj_minefield.minefield[mine_index_row][mine_index_column] = MINE;
+		obj_minefield.minefield_blueprint[mine_index_row][mine_index_column] = MINE;
 	}	
 }

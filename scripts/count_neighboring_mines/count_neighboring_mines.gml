@@ -12,7 +12,7 @@ function count_neighboring_mines(row, column) {
 			if column_scan < 0 or column_scan >= obj_minefield.NUMBER_OF_COLUMNS
 			or (column_neighbor == 0 and row_neighbor == 0) continue;
 		
-			if obj_minefield.minefield[row_scan][column_scan] == MINE neighboring_mine_count++;
+			if obj_minefield.minefield_blueprint[row_scan][column_scan] == MINE neighboring_mine_count++;
 			else continue;
 		}
 	}
