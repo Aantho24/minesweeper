@@ -1,0 +1,6 @@
+SPEED = 1;
+
+MIN_ANGLE = 0;
+MAX_ANGLE = -90;
+
+ANGLE = random_range(MIN_ANGLE, MAX_ANGLE)
