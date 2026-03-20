@@ -7,3 +7,12 @@
 
 To learn version control:
 https://www.youtube.com/watch?v=ekOp35B1Bdg
+
+
+LONG TERM PLAN:
+1. Create a minefield array that's fully complete (0-9)
+2. Create an empty version that the player will play on
+	- Have it check the complete version every click and update it
+3. When you click on a 0, reveal all of its adjacent tiles (diagonals too) and numbers that border them
+4. When you click for the first time, move the mine away if you click on it
+	- Move mines within a 5x5 square radius (as an example) of where you first click

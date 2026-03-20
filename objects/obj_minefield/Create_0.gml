@@ -2,10 +2,11 @@ randomize();
 
 // MINE is 9 because spr_tile's 9th image index is the mine tile 
 #macro MINE "9"
+#macro CLICKED "10"
 
 
-NUMBER_OF_ROWS = 18;
-NUMBER_OF_COLUMNS = 32;
+NUMBER_OF_ROWS = 16;
+NUMBER_OF_COLUMNS = 30;
 
 minefield_blueprint = initialize_minefield(NUMBER_OF_ROWS, NUMBER_OF_COLUMNS);
 
@@ -14,7 +15,7 @@ minefield_blueprint = initialize_minefield(NUMBER_OF_ROWS, NUMBER_OF_COLUMNS);
 shuffled_indexes = create_shuffled_index_list();
 
 
-NUMBER_OF_MINES = 100;
+NUMBER_OF_MINES = 99;
 // Failsafe in case number of mines is a negative number or more than what can fit.
 NUMBER_OF_MINES = min(NUMBER_OF_COLUMNS * NUMBER_OF_ROWS, NUMBER_OF_MINES);
 
@@ -32,21 +33,14 @@ playable_minefield = initialize_minefield(NUMBER_OF_ROWS, NUMBER_OF_COLUMNS);
 
 draw_playable_minefield_tiles(X_DRAW_START, Y_DRAW_START);
 
+
+
+
+// DEBUG: Print minefield_blueprint
 /*
-LONG TERM PLAN:
-1. Create a minefield array that's fully complete (0-9)
-2. Create an empty version that the player will play on
-	- Have it check the complete version every click and update it
-
-*/
-
 for (var row = 0; row < NUMBER_OF_ROWS; row++) {
 	show_debug_message(minefield_blueprint[row]);
 }
-show_debug_message($"There are {count_neighboring_mines(2, 2)} mines!")
 
-// DEBUG: Print minefield
-/*
-for (var row = 0; row < NUMBER_OF_ROWS; row++) {
-	show_debug_message(minefield[row]);
-}
+// DEBUG: Count the mines neighboring a given tile
+// show_debug_message($"There are {count_neighboring_mines(0, 0)} mines!")
