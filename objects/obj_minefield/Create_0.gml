@@ -61,7 +61,8 @@ LONG TERM PLAN:
 
 */
 
-show_debug_message(count_neighboring_mines(0, 0))
+
+show_debug_message($"There are {number_all_tiles_in_minefield(1, 1)} mines!")
 
 // DEBUG: Print minefield
 /*
