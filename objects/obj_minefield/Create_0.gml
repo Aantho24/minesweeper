@@ -4,8 +4,8 @@ randomize();
 #macro MINE "9"
 
 
-NUMBER_OF_ROWS = 3;
-NUMBER_OF_COLUMNS = 3;
+NUMBER_OF_ROWS = 18;
+NUMBER_OF_COLUMNS = 32;
 
 minefield = initialize_minefield(NUMBER_OF_ROWS, NUMBER_OF_COLUMNS);
 
@@ -14,7 +14,7 @@ minefield = initialize_minefield(NUMBER_OF_ROWS, NUMBER_OF_COLUMNS);
 shuffled_indexes = create_shuffled_index_list();
 
 
-NUMBER_OF_MINES = 5;
+NUMBER_OF_MINES = 100;
 // Failsafe in case number of mines is a negative number or more than what can fit.
 NUMBER_OF_MINES = min(NUMBER_OF_COLUMNS * NUMBER_OF_ROWS, NUMBER_OF_MINES);
 
@@ -22,8 +22,8 @@ spawn_mines_in_minefield(NUMBER_OF_MINES);
 
 
 
-X_DRAW_START = 32;
-Y_DRAW_START = 16;
+X_DRAW_START = 0;
+Y_DRAW_START = 0;
 
 create_minefield_tiles(X_DRAW_START, Y_DRAW_START);
 

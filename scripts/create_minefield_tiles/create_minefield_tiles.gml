@@ -17,6 +17,8 @@ function create_minefield_tiles(X_DRAW_START, Y_DRAW_START) {
 					image_index = MINE;
 				}
 			} else {
+				neighboring_mines = count_neighboring_mines(row, column);
+				obj_minefield.minefield[row][column] = string(neighboring_mines);
 				with (tile) {
 					image_index = count_neighboring_mines(row, column);
 				}	
