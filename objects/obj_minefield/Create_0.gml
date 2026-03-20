@@ -25,7 +25,9 @@ spawn_mines_in_minefield(NUMBER_OF_MINES);
 X_DRAW_START = 0;
 Y_DRAW_START = 0;
 
-create_minefield_tiles(X_DRAW_START, Y_DRAW_START);
+create_minefield_blueprint();
+
+draw_minefield_tiles(X_DRAW_START, Y_DRAW_START);
 
 /*
 LONG TERM PLAN:
