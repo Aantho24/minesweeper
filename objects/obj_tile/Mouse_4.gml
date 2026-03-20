@@ -1,4 +1,4 @@
-obj_minefield.playable_minefield[row_position][column_position] = obj_minefield.minefield_blueprint[row_position][column_position];
+obj_minefield.minefield_display[row_position][column_position] = obj_minefield.minefield_blueprint[row_position][column_position];
 	
 with (obj_tile) {
 	instance_destroy(self);	
@@ -8,12 +8,14 @@ if obj_minefield.minefield_blueprint[row_position][column_position] == MINE {
 	audio_play_sound_ext({ sound : snd_mine_hit });
 }
 
-tile_number = real(obj_minefield.playable_minefield[row_position][column_position]);
+tile_number = real(obj_minefield.minefield_display[row_position][column_position]);
 if tile_number == 0 {
-	obj_minefield.playable_minefield[row_position][column_position] = CLICKED;	
+	obj_minefield.minefield_display[row_position][column_position] = CLICKED;	
 }
 
-draw_playable_minefield_tiles(obj_minefield.X_DRAW_START, obj_minefield.Y_DRAW_START);
+draw_minefield_display_tiles(obj_minefield.X_DRAW_START, obj_minefield.Y_DRAW_START);
+
+// TODO: Play a sound when you click on an empty tile
 
 // DEBUG: Prints tile's array index when clicked
 // show_debug_message($"{row_position}, {column_position}")

@@ -11,7 +11,7 @@ function number_minefield_blueprint_tiles() {
 	}
 }
 
-function draw_playable_minefield_tiles(X_DRAW_START, Y_DRAW_START) {
+function draw_minefield_display_tiles(X_DRAW_START, Y_DRAW_START) {
 
 	var x_draw = X_DRAW_START;
 	var y_draw = Y_DRAW_START;
@@ -23,7 +23,7 @@ function draw_playable_minefield_tiles(X_DRAW_START, Y_DRAW_START) {
 			with (tile) {
 				row_position = row;
 				column_position = column;
-				image_index = real(obj_minefield.playable_minefield[row][column]);
+				image_index = real(obj_minefield.minefield_display[row][column]);
 			}
 			
 			x_draw += sprite_get_width(obj_tile.sprite_index);
