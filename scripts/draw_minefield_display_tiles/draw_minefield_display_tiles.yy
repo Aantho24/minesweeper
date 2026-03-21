@@ -1,9 +1,9 @@
 {
   "$GMScript":"v1",
-  "%Name":"create_minefield_tiles",
+  "%Name":"draw_minefield_display_tiles",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"create_minefield_tiles",
+  "name":"draw_minefield_display_tiles",
   "parent":{
     "name":"Scripts",
     "path":"folders/Scripts.yy",
