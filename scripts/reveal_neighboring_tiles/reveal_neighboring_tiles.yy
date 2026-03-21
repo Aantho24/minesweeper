@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"reveal_neighboring_tiles",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"reveal_neighboring_tiles",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

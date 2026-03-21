@@ -8,9 +8,9 @@ if obj_minefield.minefield_blueprint[row_position][column_position] == MINE {
 	audio_play_sound_ext({ sound : snd_mine_hit });
 }
 
-tile_number = real(obj_minefield.minefield_display[row_position][column_position]);
-if tile_number == 0 {
-	obj_minefield.minefield_display[row_position][column_position] = CLICKED;	
+tile_number = obj_minefield.minefield_display[row_position][column_position];
+if tile_number == "0" {
+	reveal_neighboring_tiles(row_position, column_position);	
 }
 
 draw_minefield_display_tiles(obj_minefield.X_DRAW_START, obj_minefield.Y_DRAW_START);
