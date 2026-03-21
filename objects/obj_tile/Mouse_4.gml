@@ -1,4 +1,4 @@
-obj_minefield.minefield_display[row_position][column_position] = obj_minefield.minefield_blueprint[row_position][column_position];
+reveal_tile(row_position, column_position);
 	
 with (obj_tile) {
 	instance_destroy(self);	

@@ -37,6 +37,7 @@
     {"id":{"name":"minefield_initializaion_scripts","path":"scripts/minefield_initializaion_scripts/minefield_initializaion_scripts.yy",},},
     {"id":{"name":"number_minefield_blueprint_tiles","path":"scripts/number_minefield_blueprint_tiles/number_minefield_blueprint_tiles.yy",},},
     {"id":{"name":"reveal_neighboring_tiles","path":"scripts/reveal_neighboring_tiles/reveal_neighboring_tiles.yy",},},
+    {"id":{"name":"reveal_tile","path":"scripts/reveal_tile/reveal_tile.yy",},},
     {"id":{"name":"snd_mine_hit","path":"sounds/snd_mine_hit/snd_mine_hit.yy",},},
     {"id":{"name":"spr_bullet","path":"sprites/spr_bullet/spr_bullet.yy",},},
     {"id":{"name":"spr_cursor","path":"sprites/spr_cursor/spr_cursor.yy",},},

@@ -13,7 +13,7 @@ function reveal_neighboring_tiles(row, column) {
 				// This conditional is needed to reveal the empty tiles
 				obj_minefield.minefield_display[row_scan][column_scan] = CLICKED;	
 			} else {
-				obj_minefield.minefield_display[row_scan][column_scan] = obj_minefield.minefield_blueprint[row_scan][column_scan];
+				reveal_tile(row_scan, column_scan);
 			} // TODO: May need a seperate conditional for flagged tiles: if it detects one, continue
 		}
 	}
