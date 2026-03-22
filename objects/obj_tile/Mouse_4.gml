@@ -1,8 +1,8 @@
-reveal_tile(row_position, column_position);
-	
-with (obj_tile) {
-	instance_destroy(self);	
+if obj_minefield.minefield_display[row_position][column_position] != UNREVEALED {
+	exit;	
 }
+
+reveal_tile(row_position, column_position);
 	
 if obj_minefield.minefield_blueprint[row_position][column_position] == MINE {
 	audio_play_sound_ext({ sound : snd_mine_hit });

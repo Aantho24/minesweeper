@@ -1,4 +1,8 @@
 function draw_minefield_display_tiles(X_DRAW_START, Y_DRAW_START) {
+	with (obj_tile) {
+		instance_destroy(self);	
+	}
+
 
 	var x_draw = X_DRAW_START;
 	var y_draw = Y_DRAW_START;
