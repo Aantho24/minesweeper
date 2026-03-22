@@ -1,4 +1,4 @@
-if obj_minefield.minefield_display[row_position][column_position] != UNREVEALED {
+if minefield_display_tile != UNREVEALED and minefield_display_tile {
 	exit;	
 }
 

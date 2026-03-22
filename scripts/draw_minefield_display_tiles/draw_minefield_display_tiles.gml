@@ -14,7 +14,8 @@ function draw_minefield_display_tiles(X_DRAW_START, Y_DRAW_START) {
 			with (tile) {
 				row_position = row;
 				column_position = column;
-				image_index = real(obj_minefield.minefield_display[row][column]);
+				minefield_display_tile = obj_minefield.minefield_display[row_position][column_position];
+				image_index = real(minefield_display_tile);
 			}
 			
 			x_draw += sprite_get_width(obj_tile.sprite_index);
