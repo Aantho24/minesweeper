@@ -2,7 +2,7 @@ randomize();
 
 // MINE is 9 because spr_tile's 9th image index is the mine tile 
 #macro MINE "9"
-#macro CLICKED "10"
+#macro UNREVEALED "10"
 
 
 NUMBER_OF_ROWS = 16;
