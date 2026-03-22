@@ -1,8 +1,9 @@
 randomize();
 
-// MINE is 9 because spr_tile's 9th image index is the mine tile 
+// MINE is 9 because spr_tile's 9th image index is the mine tile. Same logic with the rest of them.
 #macro MINE "9"
 #macro UNREVEALED "10"
+#macro EMPTY "0"
 
 
 NUMBER_OF_ROWS = 16;
@@ -36,11 +37,12 @@ draw_minefield_display_tiles(X_DRAW_START, Y_DRAW_START);
 
 
 
-// DEBUG: Print minefield_blueprint
 /*
+DEBUG: Print minefield_blueprint
 for (var row = 0; row < NUMBER_OF_ROWS; row++) {
 	show_debug_message(minefield_blueprint[row]);
 }
 
-// DEBUG: Count the mines neighboring a given tile
-// show_debug_message($"There are {count_neighboring_mines(0, 0)} mines!")
+DEBUG: Count the mines neighboring a given tile
+show_debug_message($"There are {count_neighboring_mines(0, 0)} mines!")
+*/
