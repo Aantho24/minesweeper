@@ -13,7 +13,7 @@ minefield_blueprint = initialize_minefield(NUMBER_OF_ROWS, NUMBER_OF_COLUMNS);
 
 
 // This list decides where mines will spawn to ensure multiple mines don't get the same spot.
-shuffled_indexes = create_shuffled_index_list();
+shuffled_1d_indexes = create_shuffled_1d_index_list();
 
 
 NUMBER_OF_MINES = 99;
