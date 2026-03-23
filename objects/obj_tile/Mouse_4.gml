@@ -4,13 +4,6 @@ if minefield_display_tile != UNREVEALED and minefield_display_tile {
 
 reveal_tile(row_position, column_position);
 
-if obj_minefield.minefield_display[row_position][column_position] == EMPTY {
-	var test = return_neighboring_unrevealed_tiles(row_position, column_position);
-	show_debug_message(test);
-}
-
-
-
 	
 if obj_minefield.minefield_blueprint[row_position][column_position] == MINE {
 	audio_play_sound_ext({ sound : snd_mine_hit });
@@ -18,7 +11,12 @@ if obj_minefield.minefield_blueprint[row_position][column_position] == MINE {
 
 tile_number = obj_minefield.minefield_display[row_position][column_position];
 if tile_number == EMPTY {
-	reveal_neighboring_tiles(row_position, column_position);	
+	reveal_neighboring_tiles(row_position, column_position);
+	
+	while array_length(return_all_unrevealed_tiles_neighboring_empty_tiles()) != 0 {
+		var unrevealed_tiles = return_all_unrevealed_tiles_neighboring_empty_tiles();
+		reveal_1d_array_of_tile_indexes(unrevealed_tiles);
+	}
 }
 
 draw_minefield_display_tiles(obj_minefield.X_DRAW_START, obj_minefield.Y_DRAW_START);

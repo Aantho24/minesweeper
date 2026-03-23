@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"index_conversion_scripts",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"index_conversion_scripts",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

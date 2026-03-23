@@ -1,11 +1,3 @@
-function check_for_incomplete_empty_tiles() {
-	for (var row = 0; row < obj_minefield.NUMBER_OF_ROWS; row++) {
-		for (var column = 0; column < obj_minefield.NUMBER_OF_COLUMNS; column++) {
-			
-		}
-	}
-}
-
 function return_neighboring_unrevealed_tiles(row, column) {
 	var unrevealed_tiles = [];
 	
