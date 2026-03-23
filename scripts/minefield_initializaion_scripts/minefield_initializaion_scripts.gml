@@ -3,7 +3,7 @@ function initialize_minefield(NUMBER_OF_ROWS, NUMBER_OF_COLUMNS) {
 	
 	for (var row = 0; row < NUMBER_OF_ROWS; row++) {
 		for (var column = 0; column < NUMBER_OF_COLUMNS; column++) {
-			minefield_buffer[row][column] = UNREVEALED;
+			minefield_buffer[row][column] = tile_states.unrevealed;
 		}
 	}
 	
@@ -29,6 +29,6 @@ function spawn_mines_in_minefield(NUMBER_OF_MINES) {
 		
 		mine_index = turn_1d_index_to_2d_index(mine_index);
 
-		obj_minefield.minefield_blueprint[mine_index[0]][mine_index[1]] = MINE;
+		obj_minefield.minefield_blueprint[mine_index[0]][mine_index[1]] = tile_states.mine;
 	}	
 }

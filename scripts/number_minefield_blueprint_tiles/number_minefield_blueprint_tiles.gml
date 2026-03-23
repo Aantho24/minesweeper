@@ -1,10 +1,10 @@
 function number_minefield_blueprint_tiles() {
 	for (var row = 0; row < obj_minefield.NUMBER_OF_ROWS; row++) {
 		for (var column = 0; column < obj_minefield.NUMBER_OF_COLUMNS; column++) {
-			if obj_minefield.minefield_blueprint[row][column] = MINE {
+			if obj_minefield.minefield_blueprint[row][column] = tile_states.mine {
 				continue;
 			} else {
-				neighboring_mines = string(count_neighboring_mines(row, column));
+				neighboring_mines = count_neighboring_mines(row, column);
 				obj_minefield.minefield_blueprint[row][column] = neighboring_mines;
 			}
 		}

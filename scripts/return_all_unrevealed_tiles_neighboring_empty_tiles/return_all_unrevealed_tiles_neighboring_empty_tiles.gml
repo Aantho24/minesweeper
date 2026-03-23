@@ -6,7 +6,7 @@ function return_all_unrevealed_tiles_neighboring_empty_tiles() {
 		for (var column = 0; column < obj_minefield.NUMBER_OF_COLUMNS; column++) {
 			var tile_state = obj_minefield.minefield_display[row][column];
 			
-			if tile_state == EMPTY array_buffer = return_neighboring_unrevealed_tiles(row, column);
+			if tile_state == tile_states.empty array_buffer = return_neighboring_unrevealed_tiles(row, column);
 			
 			for (var i = 0; i < array_length(array_buffer); i++) array_push(unrevealed_tiles, array_buffer[i]);
 			
