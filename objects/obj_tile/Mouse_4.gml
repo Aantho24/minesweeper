@@ -3,6 +3,14 @@ if minefield_display_tile != UNREVEALED and minefield_display_tile {
 }
 
 reveal_tile(row_position, column_position);
+
+if obj_minefield.minefield_display[row_position][column_position] == EMPTY {
+	var test = return_neighboring_unrevealed_tiles(row_position, column_position);
+	show_debug_message(test);
+}
+
+
+
 	
 if obj_minefield.minefield_blueprint[row_position][column_position] == MINE {
 	audio_play_sound_ext({ sound : snd_mine_hit });
