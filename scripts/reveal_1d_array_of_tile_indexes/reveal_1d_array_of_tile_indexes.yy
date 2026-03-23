@@ -1,9 +1,9 @@
 {
   "$GMScript":"v1",
-  "%Name":"Script9",
+  "%Name":"reveal_1d_array_of_tile_indexes",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"Script9",
+  "name":"reveal_1d_array_of_tile_indexes",
   "parent":{
     "name":"Scripts",
     "path":"folders/Scripts.yy",

@@ -1,0 +1,11 @@
+{
+  "$GMNotes":"v1",
+  "%Name":"todos",
+  "name":"todos",
+  "parent":{
+    "name":"minesweeper",
+    "path":"minesweeper.yyp",
+  },
+  "resourceType":"GMNotes",
+  "resourceVersion":"2.0",
+}

@@ -16,7 +16,7 @@ minefield_blueprint = initialize_minefield(NUMBER_OF_ROWS, NUMBER_OF_COLUMNS);
 shuffled_1d_indexes = create_shuffled_1d_index_list();
 
 
-NUMBER_OF_MINES = 1;
+NUMBER_OF_MINES = 99;
 // Failsafe in case number of mines is a negative number or more than what can fit.
 NUMBER_OF_MINES = min(NUMBER_OF_COLUMNS * NUMBER_OF_ROWS, NUMBER_OF_MINES);
 

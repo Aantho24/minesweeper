@@ -20,7 +20,3 @@ function return_neighboring_unrevealed_tiles(row, column) {
 	
 	return unrevealed_tiles;
 }
-
-/*
-TODO:
-This function will either return an array of the incomplete tiles, or return false

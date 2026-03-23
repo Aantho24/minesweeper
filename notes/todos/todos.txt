@@ -1,0 +1,5 @@
+- Add flagging
+- Make sure the first tile you click is always safe (and preferably reveals a decent amount of squares)
+	- This could be a cool curse:
+		- First click is no longer guaranteed to be safe
+		- Increase or reduce change of big starting click
