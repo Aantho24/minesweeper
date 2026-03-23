@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"check_for_incomplete_empty_tiles",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"check_for_incomplete_empty_tiles",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

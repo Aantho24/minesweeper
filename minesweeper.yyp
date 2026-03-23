@@ -32,6 +32,7 @@
     {"id":{"name":"obj_tile","path":"objects/obj_tile/obj_tile.yy",},},
     {"id":{"name":"rm_game_over","path":"rooms/rm_game_over/rm_game_over.yy",},},
     {"id":{"name":"rm_game","path":"rooms/rm_game/rm_game.yy",},},
+    {"id":{"name":"check_for_incomplete_empty_tiles","path":"scripts/check_for_incomplete_empty_tiles/check_for_incomplete_empty_tiles.yy",},},
     {"id":{"name":"count_neighboring_mines","path":"scripts/count_neighboring_mines/count_neighboring_mines.yy",},},
     {"id":{"name":"draw_minefield_display_tiles","path":"scripts/draw_minefield_display_tiles/draw_minefield_display_tiles.yy",},},
     {"id":{"name":"minefield_initializaion_scripts","path":"scripts/minefield_initializaion_scripts/minefield_initializaion_scripts.yy",},},
