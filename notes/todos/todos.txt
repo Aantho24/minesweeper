@@ -3,3 +3,5 @@
 	- This could be a cool curse:
 		- First click is no longer guaranteed to be safe
 		- Increase or reduce change of big starting click
+		
+- Replace 2d and 1d array with a struct

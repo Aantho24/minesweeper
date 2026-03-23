@@ -1,9 +1,11 @@
 randomize();
 
 // MINE is 9 because spr_tile's 9th image index is the mine tile. Same logic with the rest of them.
+#macro EMPTY "0"
 #macro MINE "9"
 #macro UNREVEALED "10"
-#macro EMPTY "0"
+#macro FLAGGED "11"
+// TODO: Make this an enum, and convert strings to ints
 
 
 NUMBER_OF_ROWS = 16;
