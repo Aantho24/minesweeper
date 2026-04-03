@@ -14,8 +14,8 @@
   "exportDir":"",
   "name":"snd_mine_hit",
   "parent":{
-    "name":"minesweeper",
-    "path":"minesweeper.yyp",
+    "name":"Sounds",
+    "path":"folders/Sounds.yy",
   },
   "preload":false,
   "resourceType":"GMSound",

@@ -1,7 +1,50 @@
-- Add flagging
+- Fix flagging bug?
+- Add chords
 - Make sure the first tile you click is always safe (and preferably reveals a decent amount of squares)
+	- Make the first click move any mines in a 1x1 area
+		- Area can increase or decreases as upgrades and curses
+- Stop bullets from crashing game
+
+Health
+Mine explodes into bullets
+Bullets spawn around room
+
 	- This could be a cool curse:
 		- First click is no longer guaranteed to be safe
 		- Increase or reduce change of big starting click
 		
+Powerup:
+- Temporary invincibility and frozen time
+		
 - Replace 2d and 1d array with a struct
+
+- Modifiers that affect both the minesweeper part and the bullet hell part
+- Bosses
+- Spawns enemy on tiles 4/5 or higher
+- Clicking a mine summons a flurry of bullets
+- Clicking attacks enemies
+- Classes: one good against mines, another against bullets
+- Currency based on how many tiles you clear
+- Clicking an already revealed tile does something
+	
+Curses:
+	- Make your cursor bigger
+	- Corrosive click
+	- Increase number of mines
+	- All mines are detonated at once
+	- Random tiles are clicked
+	- Blank tiles are not automatically filled for you
+		- Either in a 3x3 area via reveal_neighboring_tiles or 1x1
+	- Lava tiles that hurt you if you hover over them
+	- Tiles that move around
+	- Minefield bounces around or moves across the screen
+Upgrades:
+	- Make your cursor smaller
+	- Right click to deflect bullets (shield)
+	- Poison click
+	- Decrease number of mines
+	- Gun to shoot enemies
+	- Hold left click (or right click?) to charge up a flurry of bullets
+	- Get bonus points if you get lucky on a 50/50
+	- Flags 10 mines for you
+- Tile that changes based on number of times you click it or number of tiles clicked after clicking it
