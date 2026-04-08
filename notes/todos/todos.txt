@@ -38,6 +38,7 @@ Curses:
 	- Lava tiles that hurt you if you hover over them
 	- Tiles that move around
 	- Minefield bounces around or moves across the screen
+	- Bombs that destroy the minefield
 Upgrades:
 	- Make your cursor smaller
 	- Right click to deflect bullets (shield)
